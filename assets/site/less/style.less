@@ -1,0 +1,80 @@
+@shadow: 2px 2px 16px rgba(126, 126, 126, .7);
+@color-primary: #337ab7;
+@color-black: #444;
+@color-white: #eee;
+
+html {
+    font-size: .8em;
+    color: @color-black;
+
+}
+
+body {
+    padding: 60px 10px 10px 80px;
+}
+
+.paginator {
+    top: 80px !important;
+    height: 300px !important;
+    width: 80px !important;
+    box-shadow:  @shadow;
+    font-size: 12px;
+}
+
+.toast-top-right {
+    top: 80px !important;
+}
+
+.form-container {
+    position: fixed;
+    right: -300px;
+    top: 80px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-shadow:  @shadow;
+    border: 1px solid @color-primary;
+    transition: all .4s ease-in-out .2s;
+    background-color: white;
+    &.collapsed {
+        right: -300px;
+    }
+    &.expanded {
+        right: 0;
+    }
+    textarea {
+        resize: none;
+        height: 70px;
+    }
+}
+
+.task-container {
+    position: fixed;
+    left: -600px;
+    top: 100px;
+    width: 600px;
+    height: 500px;
+    box-shadow:  @shadow;
+    border: 1px solid @color-primary;
+    transition: all .4s ease-in-out .2s;
+    background-color: white;
+    &.collapsed {
+        left: -600px;
+    }
+    &.expanded {
+        left: 0;
+    }
+    .inner {
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        overflow-y: scroll;
+    }
+}
+
+.btn-navigate {
+    margin-top: 8px !important;
+    margin-left: 4px;
+}

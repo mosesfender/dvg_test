@@ -1,0 +1,70 @@
+html {
+  font-size: .8em;
+  color: #444444;
+}
+body {
+  padding: 60px 10px 10px 80px;
+}
+.paginator {
+  top: 80px !important;
+  height: 300px !important;
+  width: 80px !important;
+  box-shadow: 2px 2px 16px rgba(126, 126, 126, 0.7);
+  font-size: 12px;
+}
+.toast-top-right {
+  top: 80px !important;
+}
+.form-container {
+  position: fixed;
+  right: -300px;
+  top: 80px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 2px 2px 16px rgba(126, 126, 126, 0.7);
+  border: 1px solid #337ab7;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+          transition: all 0.4s ease-in-out 0.2s;
+  background-color: white;
+}
+.form-container.collapsed {
+  right: -300px;
+}
+.form-container.expanded {
+  right: 0;
+}
+.form-container textarea {
+  resize: none;
+  height: 70px;
+}
+.task-container {
+  position: fixed;
+  left: -600px;
+  top: 100px;
+  width: 600px;
+  height: 500px;
+  box-shadow: 2px 2px 16px rgba(126, 126, 126, 0.7);
+  border: 1px solid #337ab7;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+          transition: all 0.4s ease-in-out 0.2s;
+  background-color: white;
+}
+.task-container.collapsed {
+  left: -600px;
+}
+.task-container.expanded {
+  left: 0;
+}
+.task-container .inner {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  overflow-y: scroll;
+}
+.btn-navigate {
+  margin-top: 8px !important;
+  margin-left: 4px;
+}
